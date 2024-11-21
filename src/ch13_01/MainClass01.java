@@ -34,11 +34,21 @@ public class MainClass01 {
 			String phone = memberDtos.get(i).getMphone();
 			String email = memberDtos.get(i).getMemail();
 			System.out.println(name+"/"+age+"/"+addr+"/"+phone+"/"+email);
-			
-			
 		}
 		//삭제 가능
-//		memberDtos.remove(3); // 인덱스(3) 강감찬 memerDto 객체 삭제
+		memberDtos.remove(3); // 인덱스(3) 강감찬 memerDto 객체 삭제
+		
+		System.out.println("=======================");
+		
+		// 향상된 for 문. for(MemberDto memberDto : memberDtos) 이 부분 잘 생각해 볼 것
+		for(MemberDto memberDto : memberDtos) {
+			String name = memberDto.getMname();
+			int age = memberDto.getMage();
+			String addr = memberDto.getMaddr();
+			String phone = memberDto.getMphone();
+			String email = memberDto.getMemail();
+			System.out.println(name+"/"+age+"/"+addr+"/"+phone+"/"+email);
+		}
 	}
 
 }
