@@ -9,6 +9,7 @@ public class MainClass01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		// stack --> LIFO. push 넣고, pop 빼고
 		// stack 는 클래스. new Stack<>();  이렇게 해도 되지만 써주는게 좋다
 		Stack<MemberDto> stack = new Stack<MemberDto>(); 
 		
