@@ -34,7 +34,11 @@ public class MainClass01 {
 			String phone = memberDtos.get(i).getMphone();
 			String email = memberDtos.get(i).getMemail();
 			System.out.println(name+"/"+age+"/"+addr+"/"+phone+"/"+email);
+			
+			
 		}
+		//삭제 가능
+//		memberDtos.remove(3); // 인덱스(3) 강감찬 memerDto 객체 삭제
 	}
 
 }
